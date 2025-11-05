@@ -1,0 +1,1 @@
+Let's talk about the file structure of an episode. As you can see, the structure is very simple.

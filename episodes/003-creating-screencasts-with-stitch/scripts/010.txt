@@ -1,0 +1,1 @@
+The setup dot SH file is executed before generating the episode, so you can prepare the environment for recording, like installing dependencies.

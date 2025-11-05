@@ -1,0 +1,15 @@
+output/
+episodes/**/audio/*.mp3
+logs/
+node_modules
+.bash*
+.cache
+.config
+.lesshst
+.local
+.pki
+.npm
+bin/stitch*
+bin/stellar*
+package*.json
+.node_repl_history

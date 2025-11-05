@@ -1,0 +1,6 @@
+Source "resources/config.tape"
+Source "episodes/001-install-stellar-cli-on-macos/resources/config.tape"
+
+Type "brew --version"
+Enter
+Sleep 2s

@@ -1,0 +1,53 @@
+---
+name: Stitch Episode
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode number (e.g. 001)"
+        required: true
+        type: string
+      voiceover_output_format:
+        description: "Voiceover output format"
+        default: mp3_44100_192
+        type: choice
+        options:
+          - mp3_44100_192
+          - mp3_44100_128
+      match:
+        description: "Only process segments matching this pattern (e.g. 001)"
+        type: string
+        default: ""
+      overwrite_voiceover:
+        description: "Regenerate voiceover files"
+        default: "false"
+        type: boolean
+      overwrite_vhs:
+        description: "Regenerate VHS files"
+        default: "false"
+        type: boolean
+
+concurrency:
+  group: stitch-episode-${{ github.event.inputs.episode }}
+  cancel-in-progress: true
+
+jobs:
+  stitch:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stitch Episode
+        uses: fnando/stitch@6f22fab7fc6e8c8905fbba65db317e543cf9aa7f
+        with:
+          episode: ${{ github.event.inputs.episode }}
+          voiceover_output_format:
+            ${{ github.event.inputs.voiceover_output_format }}
+          overwrite_voiceover: ${{ github.event.inputs.overwrite_voiceover }}
+          overwrite_vhs: ${{ github.event.inputs.overwrite_vhs }}
+          match: ${{ github.event.inputs.match }}
+          elevenlabs_api_key: ${{ secrets.ELEVENLABS_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}

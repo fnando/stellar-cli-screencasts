@@ -1,0 +1,9 @@
+The most important tool in this process is ffmpeg, which allows us to manipulate video and audio files in various ways.
+
+For instance, we generate the intro and outro segments.
+
+We also process each segment individually to apply fades and generate videos out of images.
+
+The backtrack audio is also processed to apply fades based on the final video duration.
+
+Once we have everything ready, we use ffmpeg one last time to combine them into a single video file.

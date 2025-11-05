@@ -1,0 +1,1 @@
+The scripts directory contains text files that will be used to generate the voiceover. They may contain special tags recognized by ElevenLabs, so make sure you read their documentation.

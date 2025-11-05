@@ -1,0 +1,5 @@
+Welcome to Stitch, the tool that makes creating screencasts easy and fun!
+
+Stitch is a command line tool that allows you to create professional-quality screencasts by combining screen recordings, audio narration, and images.
+
+Stitch is just two scripts written in Ruby and Node JS that use FFMpeg under the hood to do all the heavy lifting.

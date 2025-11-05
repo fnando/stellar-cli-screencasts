@@ -1,0 +1,3 @@
+The content directory is where you can add images, videos, and VHS tape files. The combination of a voiceover file and content file is called segment.
+
+Oh, did you notice that dot disabled files? Any unrecognized file extension is ignored and won't appear in the final video.

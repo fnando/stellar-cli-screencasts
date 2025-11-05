@@ -1,0 +1,1 @@
+Finally, the title dot text file contains the episode's title. By default, linebreaks are generated automatically, but you can add linebreaks if you want to control how the title will appear on the intro.

@@ -1,0 +1,7 @@
+Once your have all your content ready to go, it's time to create your screencast.
+
+The easiest way is by running the Docker image with all the dependencies pre-installed, but in this example we're going to run the stitch script directly.
+
+The screencast generation can take a while depending on the length of your content, so be patient.
+
+Once the export is finished, you can check the output folder for your generated screencast video file.

@@ -1,0 +1,4 @@
+For Stellar CLI, it was essential that we had the ability to record terminal sessions.
+
+To achieve this, we use VHS, a powerful terminal session recorder that spits both GIF and video files.
+
