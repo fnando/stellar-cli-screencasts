@@ -1,5 +1,3 @@
-To generate the voiceover for each episode, we're using ElevenLabs.
+We use ElevenLabs to generate voiceovers for each episode.
 
-It generates high quality voice that's not too annoying.
-
-The biggest advantage is that we have the quickest turnaround time when we need to make changes to the script. We also maintain a consistent voice across all episodes.
+It produces high-quality, natural-sounding voices and offers significant advantages: rapid turnaround when script changes are needed, and consistent voice branding across all episodes.
