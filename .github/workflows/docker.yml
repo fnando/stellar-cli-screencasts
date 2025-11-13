@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Stitch Episode
-        uses: fnando/stitch@9a6242c5038c3980b9e878d73d5d5f5dd4999dc4
+        uses: fnando/stitch@a8308b44ab8cd6dd89a286e848900822edc0e2a2
         with:
           episode: ${{ github.event.inputs.episode }}
           voiceover_output_format:
